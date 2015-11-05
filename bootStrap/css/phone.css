@@ -1,0 +1,9 @@
+body{
+    background-color:yellowgreen;
+}
+.txt{
+    border:5px solid black;
+    color:purple;
+    margin:6px;
+    padding:3px;
+}

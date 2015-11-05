@@ -1,0 +1,9 @@
+body{
+    background-color:blueviolet;
+}
+.txt{
+    border:5px solid orange;
+    color:deeppink;
+    margin:10px;
+    padding:10px;
+}

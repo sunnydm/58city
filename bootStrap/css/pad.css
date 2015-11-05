@@ -1,0 +1,9 @@
+body{
+    background-color:lightpink;
+}
+.txt{
+    border:5px solid dodgerblue;
+    color:dimgray;
+    margin:8px;
+    padding:6px;
+}

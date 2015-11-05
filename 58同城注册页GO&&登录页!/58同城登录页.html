@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>58同城登录页</title>
+    <link href="../bootStrap/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../bootStrap/js/html5shiv.min.js"></script>
+    <script src="../bootStrap/js/respond.min.js"></script>
+    <![endif]-->
+    <script src="jquery-1.11.3.js"></script>
+    <script src="58dl.js"></script>
+
+</head>
+<body>
+<header style="width:90%;margin:0px auto;border-bottom:1px solid #ddd;" >
+    <div class="navbar navbar-default"  style="padding:50px 80px 0px 80px;border:none;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#" class="navbar-text">
+                    <img src="img/wS5kZU4Vg8oH.gif" alt="" />
+                </a>
+            </div>
+            <p class="navbar-text" style="font-size:24px; margin-top:30px;font-weight:bold;">用户登录</p>
+            <a href="#" class="navbar-text navbar-right" style="font-size:20px;font-weight:bold;">帮助</a>
+            <span class="navbar-text navbar-right">|</span>
+            <a href="../58同城首页/58同城首页.html" class="navbar-text navbar-right" style="font-size:20px;font-weight:bold;">返回首页</a>
+        </div>
+    </div>
+</header>
+<section style="width:90%;margin:50px auto">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6">图片</div>
+            <div class="col-xs-6" style="border:1px solid #ddd;">
+                <ul class="nav nav-tabs nav-justified" id="loginNav">
+                    <li><a href="#">58账号登录</a></li>
+                    <li><a href="#" >微信登录</a></li>
+                    <li><a href="#">QQ快速登录</a></li>
+                </ul>
+                <!--使用58账号登录-->
+                <div id="login0" style="display:block">
+                    <div class="row" style="margin-top:30px;">
+                        <div class="col-xs-4 col-xs-offset-3">
+                            <a href="#">普通登录方式</a>
+                        </div>
+                        <div class="col-xs-5">
+                            <a href="#">手机动态登录</a>
+                        </div>
+                    </div>
+                    <div>
+                    <form action="" class="form-horizontal" style="margin-top:20px;">
+                        <div class="form-group row">
+                            <label for="uname" class="control-label col-xs-3">账户名:</label>
+                            <div class="col-xs-9">
+                                <input type="text" class="form-control" id="uname" placeholder="用户名/电子邮箱/手机"/>
+                            </div>
+                        </div>
+                        <div class="form-group" style="margin-top:30px;">
+                            <label for="upwd" class="control-label col-xs-3">密码:</label>
+                            <div  class="col-xs-9">
+                                <input type="text" class="form-control" id="upwd" placeholder="请输入密码"/>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="checkbox col-xs-6 col-xs-offset-3">
+                                <label >
+                                    <input type="checkbox" />下次自动登录
+                                </label>
+                            </div>
+                            <div class="col-xs-3" style="margin-top:7px;"><a href="#">忘记密码</a></div>
+                        </div>
+                        <div class="row " style="margin-top:20px;">
+                            <div class="col-xs-9 col-xs-offset-3">
+                                <button type="button" class="btn btn-danger btn-lg">登录</button>
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+                <!--使用微信登录-->
+                <div id="login1" style="display:none">
+                    <div class="text-center" >
+                        <p style="padding-top:60px;">安全登录防止被盗</p>
+                        <img src="img/small-z.jpg" alt=""/>
+                        <p>使用微信扫描上方二维码</p>
+                        <a href="#">使用帮助</a>
+                    </div>
+                </div>
+                <!--使用QQ登录-->
+                <div id="login2" style="display:none">
+                    <form action="">
+                        <div class="from-group">
+                            <label for="ZH" class="control-label"></label>
+                            <input type="text" class="form-control" id="ZH" placeholder="QQ账号/邮箱/手机号"/>
+                        </div>
+                        <div class="from-group">
+                            <label for="MM" class="control-label"></label>
+                            <input type="text" class="form-control" id="MM" placeholder="QQ密码"/>
+                        </div>
+                        <div class="from-group">
+                            <label for="DL" class="control-label"></label>
+                            <input type="button" class="form-control btn btn-success" id="DL" value="登录"/>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" style="margin-top:40px;">58同城将获得以下权限</label>
+                            <input type="text" class="form-control"  placeholder="访问您的详细资料（必选）"/>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label"></label>
+                            <input type="text" class="form-control"  placeholder="访问您的基础资料（必选）"/>
+                        </div>
+                    </form>
+
+                </div>
+                <!--固定信息-->
+                <div class="row" style="margin-top:50px; border-top:1px solid #ddd;padding-top:10px;" >
+                    <div class="col-xs-11 col-xs-offset-1">使用合作网站登录:</div>
+                </div>
+                <div class="row" style="margin-top:20px;margin-bottom:20px;">
+                    <div class="col-xs-8 col-xs-offset-1">
+                        <a href="#">新浪微博</a>&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;<a href="#">支付宝</a>&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;<a
+                            href="#">微信</a>&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;<a href="#">百度</a>&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;<a
+                            href="#">人人网</a>
+                    </div>
+                    <div class="col-xs-3"><a href="#">免费注册58同城</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</section>
+<footer style="border-top:1px solid #ddd;width:90%;margin:50px auto;text-align:center;">
+    <p style="margin-top:20px;">&copy; 58.com <a href="#">与58对话</a></p>
+</footer>
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<script src="../bootStrap/js/jquery-1.11.3.js"></script>
+<script src="../bootStrap/js/bootstrap.js"></script>
+<script>
+    (function () {
+        var s = document.createElement("script");
+        s.onload = function () {
+            bootlint.showLintReportForCurrentDocument([]);
+        };
+        s.src = "../bootStrap/js/bootlint.js";
+        document.body.appendChild(s)
+    })();
+</script>
+</body>
+</html>
